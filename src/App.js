@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
-
+import NavBarNew from './components/NewNav/NavBarNew';
+import SecondScreen from './screens/SecondScreen';
+import ThirdScreen from './screens/ThirdScreen';
+import ForthScreen from './screens/ForthScreen';
+import ByMe from './components/ByMe/ByMe';
+import Stats from './components/special/Special';
 function App() {
 
   
@@ -30,7 +35,7 @@ function App() {
   return <>
   <NavBarNew/>
   
-  <StatsOverlay  scrolled={scrolled}/>
+  <Stats  scrolled={scrolled}/>
   
   <SecondScreen/>
   {/* <CourseCard/> */}
